@@ -1,2 +1,4 @@
 # mvkovatch3.github.io
-personal website
+Mike Kovatch's personal website.
+
+Under development...
