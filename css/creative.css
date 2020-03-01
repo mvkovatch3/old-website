@@ -9731,6 +9731,10 @@ header.masthead h1 {
   font-size: 1.2rem;
 }
 
+#portfolio .project-subtitle {
+  font-size: 0.85rem;
+}
+
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
