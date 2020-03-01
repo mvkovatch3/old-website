@@ -26,6 +26,7 @@
   --gray-dark: #343a40;
   /* --primary: #f4623a; */
   --primary: #28a745;
+  --primary-hover: #11822b;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -170,7 +171,8 @@ a {
 }
 
 a:hover {
-  color: #d6370c;
+  /* color: #d6370c; */
+  color: var(--primary-hover);
   text-decoration: underline;
 }
 
@@ -2267,8 +2269,10 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #f24516;
-  border-color: #ee3e0d;
+  /* background-color: #f24516;
+  border-color: #ee3e0d; */
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -2794,7 +2798,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color: #d6370c;
+  /* color: #d6370c; */
+  color: var(--primary-hover);
   text-decoration: underline;
 }
 
@@ -4608,7 +4613,8 @@ input[type="button"].btn-block {
 
 .page-link:hover {
   z-index: 2;
-  color: #d6370c;
+  /* color: #d6370c; */
+  color: var(--primary-hover);
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -9373,7 +9379,8 @@ button.bg-dark:focus {
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #d6370c !important;
+  /* color: #d6370c !important; */
+  color: var(--primary-hover) !important;
 }
 
 .text-secondary {
