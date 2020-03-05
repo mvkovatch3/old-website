@@ -34,6 +34,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --portfolio-bg: rgba(0,0,0,0.1); 
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -9728,8 +9729,6 @@ header.masthead h1 {
   opacity: 0;
   color: #fff;
   /* background: rgba(244, 98, 58, 0.9); */
-  /* have to manually change portfolio hover color here */
-  /* background: rgba(40,167,69, 0.9);  */
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -9754,13 +9753,21 @@ header.masthead h1 {
 /* if user DOES have a mouse, show caption on hover */
 @media (hover: hover) and (any-pointer: fine) {
   #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
+    background: var(--portfolio-bg);
     opacity: 1;
   }
 }
 
 /* if user doesn't have a mouse, show caption automatically */
-@media (hover: none) and (any-pointer: coarse) {
+@media (hover: none) {
   #portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+    background: var(--portfolio-bg);
+    opacity: 1;
+  }
+}
+@media (any-pointer: coarse) {
+  #portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+    background: var(--portfolio-bg);
     opacity: 1;
   }
 }
