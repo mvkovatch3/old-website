@@ -9759,7 +9759,20 @@ header.masthead h1 {
 }
 
 /* if user doesn't have a mouse, show caption automatically */
+/* lots of options to hopefully deal w/ Android */
 @media (hover: none) {
+  #portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+    background: var(--portfolio-bg);
+    opacity: 1;
+  }
+}
+@media (any-hover: none) {
+  #portfolio .container-fluid .portfolio-box .portfolio-box-caption {
+    background: var(--portfolio-bg);
+    opacity: 1;
+  }
+}
+@media (pointer: coarse) {
   #portfolio .container-fluid .portfolio-box .portfolio-box-caption {
     background: var(--portfolio-bg);
     opacity: 1;
