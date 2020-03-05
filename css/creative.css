@@ -9756,6 +9756,7 @@ header.masthead h1 {
   opacity: 1;
 }
 
+/* if user doesn't have a mouse, show caption automatically */
 @media (hover: none) and (any-pointer: coarse) {
   #portfolio .container-fluid .portfolio-box .portfolio-box-caption {
     opacity: 1;
