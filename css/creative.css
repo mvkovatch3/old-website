@@ -9751,9 +9751,11 @@ header.masthead h1 {
   font-size: 1.2rem;
   text-shadow: #000 1px 0 5px;
 }
-
-#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
+/* if user DOES have a mouse, show caption on hover */
+@media (hover: hover) and (any-pointer: fine) {
+  #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+  }
 }
 
 /* if user doesn't have a mouse, show caption automatically */
